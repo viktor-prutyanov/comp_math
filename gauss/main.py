@@ -8,7 +8,7 @@ print("Input file is", sys.argv[1])
 in_file = open(sys.argv[1], 'r')
 N = int(in_file.readline())
 print("N =", N)
-eps = float(in_file.readline())
+eps = numpy.float64(in_file.readline())
 print("eps =", eps)
 
 b = numpy.empty(N, numpy.float64)
