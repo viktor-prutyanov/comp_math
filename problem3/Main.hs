@@ -2,6 +2,7 @@ module Main where
 
 import System.Environment
 import Data.Complex
+import Data.List
 import FFT (fft)
 
 roundNSigns :: RealFloat x => x -> Int -> x  
@@ -16,6 +17,6 @@ toComplexDoubleList s = map strToInt (lines s)
 
 main :: IO ()
 main = do
-    [inFile] <- getArgs
+    [inFile, outFile] <- getArgs
     s <- readFile inFile
-    print (map (\z -> roundComplex z 10) (fft (toComplexDoubleList s)))
+    writeFile outFile $ intercalate "\n" $ map show $ map (\z -> roundComplex z 10) $ fft $ toComplexDoubleList s
