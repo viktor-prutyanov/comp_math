@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+'''
+    @author: Viktor Prutyanov mailto:viktor.prutyanov@phystech.edu
+'''
+
 import sys
 from functools import reduce
 from itertools import chain
