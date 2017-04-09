@@ -2,5 +2,5 @@
 problem1 - Gauss method (Python)  
 problem2 - Lagrange, Newton and cubic spline polynoms interpolation (Python)  
 problem3 - FFT (Haskell)  
-problem2-1 - Shooting and tridiag methods (Python)
+problem2-1 - Shooting and tridiag methods (Python)  
 problem2-2 - Particle derivative equation (C++)  
