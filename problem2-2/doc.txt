@@ -1,0 +1,4 @@
+a.out data.txt 0.01 0.03
+set dgrid3d 101,34
+splot (x-exp(y))**2+y**2/2, "data.txt" with lines
+
